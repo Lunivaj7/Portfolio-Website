@@ -37,7 +37,11 @@
         </nav>
         <section id="profile">
             <div class="section__pic-container">
-                <img src="./assets/profile-pic.png" alt="Luniva Joshi Profile Picture">
+                    <img
+                        src="./assets/about-pic.jpg"
+                        alt="Profile picture"
+                        class="about-pic"
+                    />
             </div>
             <div class="section__text">
                 <p class="section__text__p1">Hello, I'm </p>
@@ -48,10 +52,16 @@
                         class="btn btn-color-2"
                         onclick="window.open('./assets/Resume.pdf')"
                     >
-                        Download CV
+                        Resume/CV
                     </button>                
                     <button
                         class="btn btn-color-1"
+                        onclick="window.open('./assets/Cover Letter.pdf')"
+                    >
+                        Cover Letter
+                    </button>                
+                    <button
+                        class="btn btn-color-2"
                         onclick="location.href='./#contact'"
                     >
                         Contact Info
@@ -75,43 +85,39 @@
             <p class="section__text__p1">Get To Know More</p>
             <h1 class="title">About Me</h1>
             <div class="section-container">
-                <div class="section__pic-container">
-                    <img
-                        src="./assets/about-pic.jpg"
-                        alt="Profile picture"
-                        class="about-pic"
-                    />
-                </div>
-                <div class="about-details-container">
-                    <div class="about-containers">
-                        <div class="details-container">
-                            <img
-                                src="./assets/experience.png"
-                                alt="Experience icon"
-                                class="icon"
-                            />
-                            <h3>Experience</h3>
-                            <p>2+ years <br />Robotics Engineering</p>
-                        </div>
-                        <div class="details-container">
-                            <img
-                                src="./assets/education.png"
-                                alt="Education icon"
-                                class="icon"
-                            />
-                            <h3>Education</h3>
-                            <p>B.Sc. Bachelors Degree<br />M.Sc. Masters Degree</p>
-                        </div>
+                <div class="about-top">
+                    <div class="media-card">
+                        <video class="media" src="./assets/ElevatorPitch.mp4" controls playsinline></video>
                     </div>
-                    <div class="text-container">
-                        <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
-                        reprehenderit et laborum, rem, dolore eum quod voluptate
-                        exercitationem nobis, nihil esse debitis maxime facere minus sint
-                        delectus velit in eos quo officiis explicabo deleniti dignissimos.
-                        Eligendi illum libero dolorum cum laboriosam corrupti quidem,
-                        reiciendis ea magnam? Nulla, impedit fuga!
-                        </p>
+                    <div class="about-details-container">
+                        <div class="about-containers">
+                            <div class="details-container">
+                                <img
+                                    src="./assets/experience.png"
+                                    alt="Experience icon"
+                                    class="icon"
+                                />
+                                <h3>Experience</h3>
+                                <p>2+ years <br />Robotics Engineering</p>
+                            </div>
+                            <div class="details-container">
+                                <img
+                                    src="./assets/education.png"
+                                    alt="Education icon"
+                                    class="icon"
+                                />
+                                <h3>Education</h3>
+                                <p>B.S. Mechanical Engineering<br />B.S. Computer Science</p>
+                            </div>
+                        </div>
+                        <div class="text-container">
+                            <p>
+                                I’m Luniva Joshi, a Mechanical Engineering and Computer Science student at Rutgers University who loves building, coding, and exploring the intersection between robotics and intelligent systems. My journey in engineering began with a fascination for how machines think and move, and it has since evolved into a drive to design systems that learn, adapt, and inspire.
+                                I’ve contributed to proposing a NASA L’SPACE mission, where I collaborated on robotics and systems engineering proposals for future space exploration. Through CodePath, I’ve built Android applications that merge creativity and functionality, while deepening my skills in software design and cybersecurity. On campus, I’m an active member of Rutgers Formula SAE and AIAA’s RU Autonomous team, working on mechanical design, perception, and control for competitive autonomous vehicles.
+                                Beyond engineering, I’m passionate about STEM outreach. As a coding instructor, I teach kids how to code, design games, and build robots using platforms like Arduino and LEGO Spike. Seeing students light up when their code comes to life reminds me why I fell in love with engineering in the first place.
+                                I recently began research in Rutgers’ robotics labs, where I’m developing skills in robotic system design, focusing on integration between mechanical structures, embedded hardware, and intelligent sensing. My goal is to continue bridging hardware and intelligence to develop robotic systems that push the boundaries of exploration, both on Earth and beyond.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -166,7 +172,7 @@
                                 alt="Experience Icon" 
                                 class="icon">
                                 <div>
-                                    <h3>Solidworks</h3>
+                                    <h3>Arduino</h3>
                                     <p>Intermediate</p>
                                 </div>
                             </article>
@@ -176,7 +182,7 @@
                                 alt="Experience Icon" 
                                 class="icon">
                                 <div>
-                                    <h3>Solidworks</h3>
+                                    <h3>Technical Writing</h3>
                                     <p>Intermediate</p>
                                 </div>
                             </article>
@@ -186,7 +192,7 @@
                                 alt="Experience Icon" 
                                 class="icon">
                                 <div>
-                                    <h3>Solidworks</h3>
+                                    <h3>Robotics Research</h3>
                                     <p>Intermediate</p>
                                 </div>
                             </article>
@@ -274,7 +280,7 @@
                     <div class="details-container color-container">
                         <div class="article-container">
                             <img src="./assets/project-1.png" 
-                            alt="Project 1" 
+                            alt="Moodify Project" 
                             class="project-img"
                             />
                         </div>
@@ -312,15 +318,11 @@
                             class="project-img"
                             />
                         </div>
-                        <h2 class="experience-sub-title project-title">Project 1</h2>
+                        <h2 class="experience-sub-title project-title">Personal Website</h2>
                         <div class="btn-container">
                             <button class="btn btn-color-2 project-btn" 
-                            onclick="location.href='https://github.com/CodepathPod4/Capstone'">
-                                Github
-                            </button>
-                            <button class="btn btn-color-2 project-btn" 
-                            onclick="location.href='https://www.youtube.com/watch?v=Cf0Su1XL0h8'">
-                                Live Demo
+                                onclick="location.href='https://lunivaj7.github.io/Portfolio-Website/'">
+                                Personal Website
                             </button>
                         </div>
                     </div>
@@ -333,6 +335,43 @@
                 onclick="location.href='./#contact'"
             />
         </section>
+        <section id="contact">
+            <p class="section__text__p1">Get in Touch</p>
+            <h1 class="title">Contact Me</h1>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img 
+                    src="./assets/email.png" 
+                    alt="Email Icon" 
+                    class="icon contact-icon .email-icon"
+                    >
+                    <p><a href="mailto:lunivajoshi7@gmail.com">lunivajoshi7@gmail.com</a></p>
+                </div>
+            </div>
+            <div class="contact-info-upper-container">
+                <div class="contact-info-container">
+                    <img 
+                    src="./assets/linkedin.png" 
+                    alt="LinkedIn Icon" 
+                    class="icon contact-icon"
+                    >
+                    <p><a href="https://www.linkedin.com/in/luniva-joshi/">LinkedIn</a></p>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <nav>
+                <div class="nav-links-container">
+                    <ul class="nav-links">
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#experience">Experience</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </nav>
+            <p>Copyright &#169; 2025 Luniva Joshi. All Rights Reserved</p>
+        </footer>
         <script src="script.js"></script>
     </body>
 </html>
